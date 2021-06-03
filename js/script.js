@@ -13,31 +13,36 @@ const quotes = [
        quote: 'Be the change that you wish to see in the world.',
        source: 'Mahatma Gandhi',
        citation:'',
-       year:''
+       year:'',
+       tags:'Insperation'
     },
     {
        quote: 'If you tell the truth, you do not have to remember anything.',
        source: 'Mark Twain',
        citation:'The Adventures of Tom Sawyer',
-       year:''
+       year:'',
+       tags:'Humor'
     },
     {
        quote: 'Always forgive your enemies; nothing annoys them so much.',
        source: 'Oscar Wilde',
        citation:'',
-       year:'1876'
+       year:'1876',
+       tags:'Humor'
     },
     {
        quote: 'You miss 100 percent of the shots you never take',
        source: 'Wayne Gretzky',
        citation:'',
-       year:''
+       year:'',
+       tags:'Business'
     },
     {
        quote: 'Life is what happens when you’re busy making other plans.',
        source: 'John Lennon',
        citation:'Beautiful boy',
-       year:'1980'
+       year:'1980',
+       tags:'Humor'
     }
     
 ];
@@ -76,6 +81,10 @@ function printQuote() {
     
     if (`${quoteRandom.year}`!=='') {
       html += `   <span class="year"> ${quoteRandom.year} </span>`;
+    }
+
+    if (`${quoteRandom.tags}`!=='') {
+      html += `   <span class="tags"> ${quoteRandom.tags} </span>`;
     }
 
    html += `
